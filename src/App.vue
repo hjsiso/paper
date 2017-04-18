@@ -1,27 +1,18 @@
 <template>
   <v-container fluid="fluid">
     <v-row class="mt-4 ml-1 mr-1">
-      <v-col xs6>
-        <!--<v-card class="primary mt-2">
-          <v-card-text>-->
-          <div class="ml-5 mt-2">
-            <div>
-              <div>Membership name</div><strong>Rol user details</strong></div>
-          </div>
-
-        <!--  </v-card-text>
-        </v-card>-->
-      </v-col>
-      <v-col xs6>
-        <!--<v-card class="primary mt-2">
-          <v-card-text>-->
-          <div class="ml-5 mt-2">
-            <div><v-btn round primary dark>Rounded Button</v-btn><v-btn round primary dark>Rounded Button</v-btn></div>
-          </div>
-
-        <!--  </v-card-text>
-        </v-card>-->
-      </v-col>
+      <v-col xs5>
+        <div class="ml-5 mt-2">
+          <div>
+            <div>Membership name</div><strong>Rol user details</strong></div>
+        </div>
+          </v-col>
+          <v-col xs5 offset-xs2>
+            <div class="ml-5 mt-2">
+              <div>
+                <v-btn round secondary>Rounded Button</v-btn><v-btn round primary dark>Rounded Button</v-btn></div>
+            </div>
+       </v-col>
       <v-col xs6 v-for="i in 2" :key="i">
         <v-card class="secondary mt-2">
           <v-card-text>6</v-card-text>
